@@ -13,32 +13,42 @@ These samples will show you how to get up and running using the Python SDKs for 
 This project framework provides examples for the following services:
 
 ### Knowledge
-* Using the **QnA SDK** [azure-cognitiveservices-knowledge-qnamaker](http://pypi.python.org/pypi/azure-cognitiveservices-knowledge-qnamaker) for the [QnA API](https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/)
+
+| Cognitive Service                                                               | Python package                                                                                                       | Documentation                                                                        |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [QnA Maker](https://azure.microsoft.com/services/cognitive-services/qna-maker/) | [azure-cognitiveservices-knowledge-qnamaker](http://pypi.python.org/pypi/azure-cognitiveservices-knowledge-qnamaker) | [QnA Maker documentation]() |
 
 ### Language
 
-* Using the **LUIS SDK** [azure-cognitiveservices-language-luis](http://pypi.python.org/pypi/azure-cognitiveservices-language-luis) for the [LUIS API](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)
-* Using the **Bing Spell Check SDK** [azure-cognitiveservices-language-spellcheck](http://pypi.python.org/pypi/azure-cognitiveservices-language-spellcheck) for the [Bing Spell Check API](https://azure.microsoft.com/services/cognitive-services/spell-check/)
-* Using the **Text Analytics SDK** [azure-cognitiveservices-language-textanalytics](http://pypi.python.org/pypi/azure-cognitiveservices-language-textanalytics) for the [Tet Analytics API](https://azure.microsoft.com/services/cognitive-services/text-analytics/)
+| Cognitive Service                                                               | Python SDK package                                                                                                       | Documentation                                                                        |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Bing Spell Check](https://azure.microsoft.com/services/cognitive-services/spell-check/) |[azure-cognitiveservices-language-spellcheck](http://pypi.python.org/pypi/azure-cognitiveservices-language-spellcheck) | [Bing Spell Check documentation](https://docs.microsoft.com/azure/cognitive-services/bing-spell-check/) |
+| [Language Understanding(LUIS)](https://docs.microsoft.com/azure/cognitive-services/luis/) | [azure-cognitiveservices-language-luis](http://pypi.python.org/pypi/azure-cognitiveservices-language-luis) | [LUIS Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-spell-check/) |
+| [Text Analytics](https://azure.microsoft.com/services/cognitive-services/text-analytics/) | [azure-cognitiveservices-language-textanalytics](http://pypi.python.org/pypi/azure-cognitiveservices-language-textanalytics) | [Text Analytics Documentation](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) |
 
 ### Search
 
-* Using the **Bing Autosuggest SDK** [azure-cognitiveservices-search-autosuggest](http://pypi.python.org/pypi/azure-cognitiveservices-search-autosuggest) for the [Autosuggest API](https://azure.microsoft.com/services/cognitive-services/autosuggest/)
-* Using the **Bing Custom Search SDK** [azure-cognitiveservices-search-customsearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-customsearch) for the [Custom Search API](https://azure.microsoft.com/services/cognitive-services/bing-custom-search/)
-* Using the **Bing Custom Image Search SDK** [azure-cognitiveservices-search-customimagesearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-customimagesearch) for the [Custom Image Search API](https://azure.microsoft.com/services/cognitive-services/bing-custom-search/)
-* Using the **Bing Entity Search SDK** [azure-cognitiveservices-search-entitysearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-entitysearch) for the [Entity Search API](https://azure.microsoft.com/services/cognitive-services/bing-entity-search-api/)
-* Using the **Bing Image Search SDK** [azure-cognitiveservices-search-imagesearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-imagesearch) for the [Image Search API](https://azure.microsoft.com/services/cognitive-services/bing-image-search-api/)
-* Using the **Bing News Search SDK** [azure-cognitiveservices-search-newssearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-newssearch) for the [News Search API](https://azure.microsoft.com/services/cognitive-services/bing-news-search-api/)
-* Using the **Bing Video Search SDK** [azure-cognitiveservices-search-videosearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-videosearch) for the [Video Search API](https://azure.microsoft.com/services/cognitive-services/bing-video-search-api/)
-* Using the **Bing Visual Search SDK** [azure-cognitiveservices-search-visualsearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-visualsearch) for the [Visual Search API](https://azure.microsoft.com/services/cognitive-services/bing-visual-search-api/)
-* Using the **Bing Web Search SDK** [azure-cognitiveservices-search-websearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-websearch) for the [Web Search API](https://azure.microsoft.com/services/cognitive-services/bing-web-search-api/)
+| Cognitive Service                                                               | Python SDK package                                                                                                       | Documentation                                                                        |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Bing Autosuggest](https://azure.microsoft.com/services/cognitive-services/spell-check/) |[azure-cognitiveservices-search-autosuggest](http://pypi.python.org/pypi/azure-cognitiveservices-search-autosuggest) | [Bing Autosuggest documentation](https://docs.microsoft.com/azure/cognitive-services/bing-autosuggest/) |
+| [Bing Custom Search](https://azure.microsoft.com/services/cognitive-services/bing-custom-search/) | [azure-cognitiveservices-search-customsearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-customsearch) | [Bing Custom Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-custom-search/) |
+| [Bing Custom Image Search](https://azure.microsoft.com/services/cognitive-services/bing-custom-search/) | [azure-cognitiveservices-search-customimagesearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-customimagesearch) | [Bing Custom Image Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-custom-search/) |
+| [Bing Entity Search](https://azure.microsoft.com/services/cognitive-services/bing-entity-search-api/) | [azure-cognitiveservices-search-entitysearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-entitysearch) | [Bing Entity Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-entities-search/) |
+| [Bing Image Search](https://azure.microsoft.com/services/cognitive-services/bing-image-search-api) | [azure-cognitiveservices-search-imagesearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-imagesearch) | [Bing Image Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/) |
+| [Bing News Search](https://azure.microsoft.com/services/cognitive-services/bing-news-search-api) | [azure-cognitiveservices-search-newssearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-newssearch) | [Bing News Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/) |
+| [Bing Video Search](https://azure.microsoft.com/services/cognitive-services/bing-video-search-api) | [azure-cognitiveservices-search-videosearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-videosearch) | [Bing Video Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-video-search/) |
+| [Bing Visual Search](https://azure.microsoft.com/services/cognitive-services/bing-visual-search) | [azure-cognitiveservices-search-videosearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-visualsearch) | [Bing Visual Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/) |
+| [Bing Web Search](https://azure.microsoft.com/services/cognitive-services/bing-web-search-api) | [azure-cognitiveservices-search-websearch](http://pypi.python.org/pypi/azure-cognitiveservices-search-websearch) | [Bing Visual Search Documentation](https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/) |
+
 
 ### Vision
 
-* Using the **Face SDK** [azure-cognitiveservices-vision-face](http://pypi.python.org/pypi/azure-cognitiveservices-vision-face) for the [Face API](https://azure.microsoft.com/services/cognitive-services/face/)
-* Using the **Computer Vision SDK** [azure-cognitiveservices-vision-computervision](http://pypi.python.org/pypi/azure-cognitiveservices-vision-computervision) for the [Computer Vision API](https://azure.microsoft.com/services/cognitive-services/computer-vision/)
-* Using the **Content Moderator SDK** [azure-cognitiveservices-vision-contentmoderator](http://pypi.python.org/pypi/azure-cognitiveservices-vision-contentmoderator) for the [Content Moderator API](https://azure.microsoft.com/services/cognitive-services/content-moderator/)
-* Using the **Custom Vision SDK** [azure-cognitiveservices-vision-customvision](http://pypi.python.org/pypi/azure-cognitiveservices-vision-customvision) for the [Custom Vision API](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)
+| Cognitive Service                                                               | Python SDK package                                                                                                       | Documentation                                                                        |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Computer Vision](https://azure.microsoft.com/services/cognitive-services/computer-vision/) |[azure-cognitiveservices-vision-computervision](http://pypi.python.org/pypi/azure-cognitiveservices-vision-computervision) | [Computer Vision documentation](https://azure.microsoft.com/services/cognitive-services/computer-vision/) |
+| [Face](https://azure.microsoft.com/services/cognitive-services/face/) |[azure-cognitiveservices-vision-face](http://pypi.python.org/pypi/azure-cognitiveservices-vision-face) | [Face documentation](https://docs.microsoft.com/azure/cognitive-services/face/) |
+| [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/) |[azure-cognitiveservices-vision-contentmoderator](http://pypi.python.org/pypi/azure-cognitiveservices-vision-contentmoderator)| [Content Moderator documentation](https://docs.microsoft.com/azure/cognitive-services/content-moderator/) |
+| [Custom Vision](https://azure.microsoft.com/services/cognitive-services/face/) | [azure-cognitiveservices-vision-customvision](http://pypi.python.org/pypi/azure-cognitiveservices-vision-customvision)| [Custom Vision documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision/) |
 
 We provide several meta-packages to help you install several packages at a time. Please note that meta-packages are only recommended for development purpose. It's recommended in production to always pin specific version of individual packages.
 
@@ -46,20 +56,16 @@ We provide several meta-packages to help you install several packages at a time.
 
 ### Prerequisites
 
-1.  A cognitive services API key with which to authenticate the SDK's calls. [Sign up here](https://azure.microsoft.com/services/cognitive-services/directory/) by navigating to the **Language** or **Search** services and acquiring an API key. You can get a trial key for **free** which will expire after 30 days or create a Cognitive Services account on the Azure portal through the *Use with an Azure subscription* button.
+* A Cognitive Services subscription key to authenticate your SDK calls. [Sign up here](https://azure.microsoft.com/services/cognitive-services/directory/) by navigating to the **Language** or **Search** services and acquiring an API key. You can get a trial key for **free** which will expire after 30 days or [create a Cognitive Services account](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account#create-and-subscribe-to-an-azure-cognitive-services-resource) on the Azure portal through the *Use with an Azure subscription* button.
 
-> Subscription keys are usually per service. For example, the subscription key for Spell Check will not be the same than Custom Search. Read the previous *sign up* link or the Azure portal for details on subscription keys.
+    > Subscription keys are usually per service. For example, the subscription key for Spell Check will not be the same than Custom Search. Read the previous *sign up* link or the Azure portal for details on subscription keys.
 
-### Installation
+* [Python](https://www.python.org/downloads/)
+    * This sample (and the SDK) is compatible with Python 2.7, 3.3, 3.4, 3.5 and 3.6.
 
-1.  If you don't already have it, [install Python](https://www.python.org/downloads/).
+It is generally recommended to use a Virtual Environment for Python development.
 
-    This sample (and the SDK) is compatible with Python 2.7, 3.3, 3.4, 3.5 and 3.6.
-
-2.  General recommendation for Python development is to use a Virtual Environment.
-    For more information, see https://docs.python.org/3/tutorial/venv.html
-
-    Install and initialize the virtual environment with the "venv" module on Python 3 (you must install [virtualenv](https://pypi.python.org/pypi/virtualenv) for Python 2.7):
+* Install and initialize the virtual environment with the "venv" module on Python 3 (you must install [virtualenv](https://pypi.python.org/pypi/virtualenv) for Python 2.7):
 
     ```
     python -m venv mytestenv # Might be "python3" or "py -3.6" depending on your Python installation
@@ -68,8 +74,10 @@ We provide several meta-packages to help you install several packages at a time.
     ./scripts/activate       # PowerShell only
     ./scripts/activate.bat   # Windows CMD only
     ```
+    
+    * For more information, see https://docs.python.org/3/tutorial/venv.html
 
-### Quickstart
+### Get the repository and install the dependencies
 
 1.  Clone the repository.
 
@@ -84,23 +92,45 @@ We provide several meta-packages to help you install several packages at a time.
     pip install -r requirements.txt
     ```
 
-4.  Set up the environment variable `LUIS_SUBSCRIPTION_KEY` with your key if you want to execute LUIS tests.
-4.  Set up the environment variable `SPELLCHECK_SUBSCRIPTION_KEY` with your key if you want to execute SpellCheck tests.
-4.  Set up the environment variable `TEXTANALYTICS_SUBSCRIPTION_KEY` with your key if you want to execute TextAnalytics tests. You might override too `TEXTANALYTICS_LOCATION` (westcentralus by default).
-3.  Set up the environment variable `AUTOSUGGEST_SUBSCRIPTION_KEY` with your key if you want to execute Autosuggest tests.
-3.  Set up the environment variable `CUSTOMSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute CustomSearch tests.
-3.  Set up the environment variable `CUSTOMIMAGESEARCH_SUBSCRIPTION_KEY` with your key if you want to execute CustomImageSearch tests.
-3.  Set up the environment variable `ENTITYSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute EntitySearch tests.
-4.  Set up the environment variable `IMAGESEARCH_SUBSCRIPTION_KEY` with your key if you want to execute ImageSearch tests.
-4.  Set up the environment variable `NEWSSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute NewsSearch tests.
-4.  Set up the environment variable `VIDEOSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute VideoSearch tests.
-4.  Set up the environment variable `VISUALSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute VideoSearch tests.
-4.  Set up the environment variable `WEBSEARCH_SUBSCRIPTION_KEY` with your key if you want to execute WebSearch tests.
-4.  Set up the environment variable `COMPUTERVISION_SUBSCRIPTION_KEY` with your key if you want to execute Computer Vision tests. You might override too `COMPUTERVISION_LOCATION` (westcentralus by default).
-4.  Set up the environment variable `CONTENTMODERATOR_SUBSCRIPTION_KEY` with your key if you want to execute Content Moderator tests. You might override too `CONTENTMODERATOR_LOCATION` (westcentralus by default).
-4.  Set up the environment variable `CUSTOMVISION_TRAINING_KEY` with your key if you want to execute CustomVision Training tests.
-4.  Set up the environment variable `CUSTOMVISION_PREDICTION_KEY` with your key if you want to execute CustomVision Prediction tests.
+### Create environment variables
 
+For each service you want to use, create an environment variable on your machine that contains your subscription key.
+
+Use the table below to find the environment variables you need to create.
+
+### Knowledge
+| Cognitive Service | Environment variable   |
+|-------------------|------------------------|
+| QnA Maker         | `QNA_SUBSCRIPTION_KEY` |
+
+### Language
+| Cognitive Service | Environment variable             | Notes                                                                                                                                                                                                                                                                                                    |
+|-------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bing Spell Check  | `SPELLCHECK_SUBSCRIPTION_KEY`    |                                                                                                                                                                                                                                                                                                          |
+| LUIS              | `LUIS_SUBSCRIPTION_KEY`          |                                                                                                                                                                                                                                                                                                          |
+| Text Analytics    | `TEXTANALYTICS_SUBSCRIPTION_KEY` | Consider creating an environment variable named `TEXTANALYTICS_LOCATION` with your [Azure region](https://docs.microsoft.com/python/api/azure-cognitiveservices-language-textanalytics/azure.cognitiveservices.language.textanalytics.models.azureregions?view=azure-python) (westcentralus by default). |
+
+### Search
+| Cognitive Service        | Environment variable                 |
+|--------------------------|--------------------------------------|
+| Bing Autosuggest         | `AUTOSUGGEST_SUBSCRIPTION_KEY`       |
+| Bing Custom Search       | `CUSTOMSEARCH_SUBSCRIPTION_KEY`      |
+| Bing Custom Image Search | `CUSTOMIMAGESEARCH_SUBSCRIPTION_KEY` |
+| Bing Entity Search       | `ENTITYSEARCH_SUBSCRIPTION_KEY`      |
+| Bing Image Search        | `IMAGESEARCH_SUBSCRIPTION_KEY`       |
+| Bing News Search         | `NEWSSEARCH_SUBSCRIPTION_KEY`        |
+| Bing Video Search        | `VIDEOSEARCH_SUBSCRIPTION_KEY`       |
+| Bing Visual Search       | `VISUALSEARCH_SUBSCRIPTION_KEY`      |
+| Bing Web Search          | `WEBSEARCH_SUBSCRIPTION_KEY`         |
+
+### Vision
+| Cognitive Service        | Environment variable                | Notes                                                                                                                                                                                                                                                                                                       |
+|--------------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Computer Vision          | `COMPUTERVISION_SUBSCRIPTION_KEY`   | Consider creating an environment variable named `COMPUTERVISION_LOCATION` with your [Azure region](https://docs.microsoft.com/python/api/azure-cognitiveservices-language-textanalytics/azure.cognitiveservices.language.textanalytics.models.azureregions?view=azure-python) (westcentralus by default).   |
+| Content Moderator        | `CONTENTMODERATOR_SUBSCRIPTION_KEY` | Consider creating an environment variable named `CONTENTMODERATOR_LOCATION` with your [Azure region](https://docs.microsoft.com/python/api/azure-cognitiveservices-language-textanalytics/azure.cognitiveservices.language.textanalytics.models.azureregions?view=azure-python) (westcentralus by default). |
+| Custom Vision Training   | `CUSTOMVISION_TRAINING_KEY`         |                                                                                                                                                                                                                                                                                                             |
+| Custom Vision Prediction | `CUSTOMVISION_PREDICTION_KEY`       |    
+                                                                                                                                                                                                                                                                                                         |
 ## Demo
 
 A demo app is included to show how to use the project.
@@ -117,5 +147,7 @@ To see the code of each example, simply look at the examples in the Samples fold
 
 ## Resources
 
-- https://docs.microsoft.com/python/api/overview/azure/cognitive-services
-- https://github.com/Azure/azure-sdk-for-python
+- [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python)
+- [Azure SDK for Python reference](https://docs.microsoft.com/python/api/overview/azure/?view=azure-python)
+- [Azure Cognitive Services Documentation](https://docs.microsoft.com/azure/cognitive-services/)
+
