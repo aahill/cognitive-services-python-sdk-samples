@@ -6,9 +6,9 @@ author: lmazuel
 
 # Cognitive Services Python SDK Samples
 
-These samples will show you how to get up and running using the Python SDKs for various Cognitive Services services. They'll cover a few rudimentary use cases and hopefully express best practices for interacting with the data from these APIs.
+These samples will show you how to get up and running using the Python SDKs for several Azure Cognitive Services. They demonstrate some of the services' features, and how to interact with the data from them.
 
-## Features
+## Featured services
 
 This project framework provides examples for the following services:
 
@@ -130,7 +130,7 @@ Use the table below to find the environment variables you need to create.
 | Content Moderator        | `CONTENTMODERATOR_SUBSCRIPTION_KEY` | Consider creating an environment variable named `CONTENTMODERATOR_LOCATION` with your [Azure region](https://docs.microsoft.com/python/api/azure-cognitiveservices-language-textanalytics/azure.cognitiveservices.language.textanalytics.models.azureregions?view=azure-python) (westcentralus by default). |
 | Custom Vision Training   | `CUSTOMVISION_TRAINING_KEY`         |                                                                                                                                                                                                                                                                                                             |
 | Custom Vision Prediction | `CUSTOMVISION_PREDICTION_KEY`       |    
-                                                                                                                                                                                                                                                                                                         |
+
 ## Demo
 
 A demo app is included to show how to use the project.
