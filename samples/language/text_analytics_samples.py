@@ -6,15 +6,14 @@ from azure.cognitiveservices.language.textanalytics import TextAnalyticsAPI
 from msrest.authentication import CognitiveServicesCredentials
 
 SUBSCRIPTION_KEY_ENV_NAME = "TEXTANALYTICS_SUBSCRIPTION_KEY"
-TEXTANALYTICS_LOCATION = os.environ.get("TEXTANALYTICS_LOCATION", "westcentralus")
+TEXTANALYTICS_LOCATION = os.environ.get("TEXTANALYTICS_LOCATION", "westus")
 
 def language_extraction(subscription_key):
-    """Language extraction.
-
-    This will detect the language of a few strings.
+    """Language extraction and detection.
+    Detects the the language of a few input strings, and prints it.
     """
+    print("\nDetecting the language the following documents were written in...")
     client = TextAnalyticsAPI(TEXTANALYTICS_LOCATION, CognitiveServicesCredentials(subscription_key))
-
     try:
         documents = [{
             'id': 1,
@@ -27,24 +26,24 @@ def language_extraction(subscription_key):
             'text': '这是一个用中文写的文件'
         }]
         for document in documents:
-            print("Asking language detection on '{}' (id: {})".format(document['text'], document['id']))
+            print("document with id({}) -> {}".format(document['id'], document['text']))
         response = client.detect_language(
             documents=documents
         )
-
+        print("\nDetected languages:")
         for document in response.documents:
-            print("Found out that {} is {}".format(document.id, document.detected_languages[0].name))
+            detected_language = document.detected_languages[0].name
+            print("detected language for document with id({}) -> {}".format(document.id, detected_language))
 
     except Exception as err:
         print("Encountered exception. {}".format(err))
 
 def key_phrases(subscription_key):
-    """Key-phrases.
-
-    The API returns a list of strings denoting the key talking points in the input text.
+    """Key-phrase extraction.
+    The Text Analytics client returns a list of strings, representing the key phrases in the input text.
     """
+    print("\nFinding key-phrases from the following documents...")
     client = TextAnalyticsAPI(TEXTANALYTICS_LOCATION, CognitiveServicesCredentials(subscription_key))
-
     try:
         documents = [{
             'language': 'ja',
@@ -57,7 +56,7 @@ def key_phrases(subscription_key):
         }, {
             'language': 'en',
             'id': 3,
-            'text': "My cat is stiff as a rock."
+            'text': "Where can I take my cat to see a veterinarian?"
         }, {
             'language': 'es',
             'id': 4,
@@ -65,14 +64,14 @@ def key_phrases(subscription_key):
         }]
 
         for document in documents:
-            print("Asking key-phrases on '{}' (id: {})".format(document['text'], document['id']))
+            print("Document with id({}) -> '{}' ".format(document['id'], document['text']))
 
         response = client.key_phrases(
             documents=documents
         )
 
         for document in response.documents:
-            print("Found out that in document {}, key-phrases are:".format(document.id))
+            print("\nkey-phrases found for document with id ({}):".format(document.id))
             for phrase in document.key_phrases:
                 print("- {}".format(phrase))
 
@@ -81,10 +80,12 @@ def key_phrases(subscription_key):
 
 
 def sentiment(subscription_key):
-    """Sentiment.
+    """Performs sentiment analysis on a few input strings.
 
-    Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment.
+    Scores close to 1 indicate a positive sentiment, while scores close to 0 indicate negative sentiment. 
+    A score .5 is considered neutral
     """
+    print("\nPerforming sentiment analysis on the following documents...")
     client = TextAnalyticsAPI(TEXTANALYTICS_LOCATION, CognitiveServicesCredentials(subscription_key))
 
     try:
@@ -107,18 +108,17 @@ def sentiment(subscription_key):
         }]
 
         for document in documents:
-            print("Asking sentiment on '{}' (id: {})".format(document['text'], document['id']))
+            print("Document with id({}): -> {}".format(document['id'], document['text']))
 
         response = client.sentiment(
             documents=documents
         )
 
         for document in response.documents:
-            print("Found out that in document {}, sentimet score is {}:".format(document.id, document.score))
+            print("Sentiment score for document with id({}) -> {}".format(document.id, document.score))
 
     except Exception as err:
         print("Encountered exception. {}".format(err))
-
 
 if __name__ == "__main__":
     import sys, os.path
